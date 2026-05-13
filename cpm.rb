@@ -5,12 +5,12 @@
 class Cpm < Formula
   desc "Claude Profile Manager — manage multiple Claude Code accounts"
   homepage "https://github.com/silicondawn/cpm"
-  version "0.5.1"
+  version "0.5.2"
   license "MIT"
 
   on_macos do
-    url "https://github.com/silicondawn/cpm/releases/download/v0.5.1/cpm_darwin_amd64.tar.gz"
-    sha256 "77efff8ff3870340879a6227a54d2938136c6f460e1a93bb9b851e496787054e"
+    url "https://github.com/silicondawn/cpm/releases/download/v0.5.2/cpm_darwin_amd64.tar.gz"
+    sha256 "994b440d90e43808d8ad2674e80d2a8b1c9e2e084985aa76b3bffacb436ff29b"
 
     define_method(:install) do
       bin.install "cpm"
@@ -29,8 +29,8 @@ class Cpm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/silicondawn/cpm/releases/download/v0.5.1/cpm_linux_amd64.tar.gz"
-      sha256 "d39dc3b1f3f8ee0af046c42a88fd9cef2ea6080212a0a8e33a345709a43371b6"
+      url "https://github.com/silicondawn/cpm/releases/download/v0.5.2/cpm_linux_amd64.tar.gz"
+      sha256 "1cbbca9d770d7ff7191c31a374647c25999cf27080aaedccce24d669e476eea0"
       define_method(:install) do
         bin.install "cpm"
       end
